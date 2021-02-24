@@ -1,0 +1,283 @@
+
+/*--------------------------------ここからreset.css----------------------------------------------------------*/
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+p,.nav{
+    margin:0;
+}
+/*-----------------------------------ここまでreset.css------------------------------------------------------------*/
+
+
+li{
+    list-style:none;
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration:none;
+    color:#111;
+}
+nav a{
+    display: block;
+}
+.container{
+    max-width:960px;
+    margin:0 auto;
+}
+.hero-pc{
+    display: none;
+}
+header{
+    padding: 20px 0;
+}
+.flex-box{
+    display: flex;
+    align-items:center;
+    justify-content:space-around;
+    padding: 20px 0 10px 0;
+}
+.flex-box__image{
+    width: 20px;
+    display: block;
+}
+nav li{
+    font-size: 12px;
+}
+.section{
+    margin-top: 60px;
+    padding: 0 20px;
+}
+.section__title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.section__list,.section__name{
+    font-size: 14px;
+}
+.section__name{
+    margin-bottom: 30px;
+}
+.section__list{
+    margin-bottom: 15px;
+    line-height:1.7em;
+}
+.section__image{
+    display: block;
+    margin-bottom: 30px;
+}
+.section-wrap{
+    border-top:1px solid #c8c8c8;
+}
+.information{
+    border-bottom:1px solid #c8c8c8;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.information li:first-child{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.information li:last-child{
+    line-height:1.5em;
+    font-size: 14px;
+}
+.content{
+    margin-top: 40px;
+    line-height:1.5em;
+    font-size: 14px;
+}
+input,textarea{
+    border: solid 1px #c8c8c8;
+    width: 93%;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+textarea{
+    height: 100px;
+}
+.contact__title{
+    margin-bottom: 5px;
+}
+.contact__submit{
+    width: 200px;
+    height: 54px;
+    display: block;
+    margin:20px auto 70px;
+    background-color:#24292e;
+    color:#fff;
+}
+footer{
+    padding: 10px 20px;
+    background-color:#24292e;
+    text-align: center;
+    color:#ffff;
+    font-size: 10px;
+}
+@media screen and (min-width:768px) {
+    .hero-pc{
+        display: block;
+        max-width: 1920px;
+        height: 420px;
+        object-fit:cover;
+    }
+    .hero-smart{
+        display: none;
+    }
+    header{
+        padding-top: 0;
+    }
+    .header-flexbox{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding: 100px 30px;
+    }
+    nav li{
+        font-size: 14px;
+    }
+    .flex-box{
+        width: 300px;
+    }
+    .section{
+        padding: 0 40px;
+        margin-top: 100px;
+    }
+    .section__image{
+        width: 31%;
+        display: block;
+    }
+    .section__flexbox{
+        display: flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
+    .information{
+        display: flex;
+        align-items:center;
+    }
+    .information li:first-child{
+        margin-bottom: 0;
+    }
+    .information li:last-child{
+        margin-left: 50px;
+    }
+    .contact__flexbox{
+        display: flex;
+    }
+    .contact__title{
+        width: 125px;
+    }
+    .contact__submit{
+        margin-bottom: 100px;
+    }
+}
+@media screen and (min-width:1024px) {
+
+}
